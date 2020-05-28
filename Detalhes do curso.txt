@@ -1,0 +1,14 @@
+Para iniciar o projeto, pelo prompt!
+
+npm init -y
+
+Ao abrir o Visual Code, abrir o terminal e instalar os dois pacotes pelo temrinal:
+yarn add express
+yard add -D nodemon
+
+
+Para poder iniciar o serivço, abra o terminal, após ter feito as configurações, execute o seguinte comando, no terminal:
+yarn run dev
+
+Instalar outro pacote, um Módulo para poder conectar no Banco de dado:
+yarn add mongoose
