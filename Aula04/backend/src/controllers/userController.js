@@ -21,7 +21,7 @@ module.exports = {
     async listaUm(req,res){
         //const response = await User.findById('5ed052b370c9f84c6424b373');
         //res.json(response);
-        const pessoa = req.params.pessoa;
+        const pessoa = await req.params.pessoa;
         /*Usando desta forma, vai ser pesquisado o campo 
         que for igual ao que eu passei na URL!
         const response = await User.find().where('name').equals(pessoa);*/
@@ -47,7 +47,19 @@ module.exports = {
     async listIdade(req,res){
         //const response = await User.where('this.age.indexOf("val" >= 28').exec();
         const response = await User.find().where('age').gte(25);
+        
+        /*Uma outra forma de se fazer essa função, no caso em vez
+        de usar a função de where, eu estou passando no find um
+        objeto, e nesse objeto eu estou definindo que ele deve ser
+        maior do que 37
+        const response = await User.find({"age" :  {$gt : 37}});*/
+
+
+        res.json(response);
+    },
+
+    async listManyFields(req,res){
+        const response = await req.query.fields;
         res.json(response);
     }
-    
 };
