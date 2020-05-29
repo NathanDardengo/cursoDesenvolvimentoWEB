@@ -10,5 +10,10 @@ yard add -D nodemon
 Para poder iniciar o serivço, abra o terminal, após ter feito as configurações, execute o seguinte comando, no terminal:
 yarn run dev
 
+
 Instalar outro pacote, um Módulo para poder conectar no Banco de dado:
 yarn add mongoose
+
+
+Instalar um pacote para auxiliar no gerenciamento de pacotes!
+yarn add require-dir
