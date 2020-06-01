@@ -3,8 +3,9 @@ Para iniciar o projeto, pelo prompt!
 npm init -y
 
 Ao abrir o Visual Code, abrir o terminal e instalar os dois pacotes pelo temrinal:
-yarn add express
-yard add -D nodemon
+yarn add express /*Pacote responsável por poder gerenciar e criar as rotas
+yard add -D nodemon /*Nodemon é para poder gerenciar o desenvolvimento, por ser desenvolvimento vem o D maisculo
+yarn add cors /*É o firewall da nossa aplicação, responsável por gerenciar outras APis acessando nosso programa
 
 
 Para poder iniciar o serivço, abra o terminal, após ter feito as configurações, execute o seguinte comando, no terminal:
@@ -17,3 +18,6 @@ yarn add mongoose
 
 Instalar um pacote para auxiliar no gerenciamento de pacotes!
 yarn add require-dir
+
+Server para podermos acessar uma API externa
+yarn add axios
