@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import api from '../../services/api';
 
-import './index.css';
+import './index.css'
 
 export default class GitCard extends Component{
     state = {
