@@ -21,3 +21,15 @@ yarn add require-dir
 
 Server para podermos acessar uma API externa
 yarn add axios
+
+_______________
+Parte Frontend!
+Na pasta que você vai iniciar a programação do frontend, abra a pasta pelo prompt de comando e execute o seguinte comando:
+create-react-app frontend
+
+Feito isso, pode ser verificado no arquivo package.json que já existe alguns scrips criado, como o start! Para rodar a sua aplicação então, basta executar o comando:
+yarn start
+
+________________________________
+Nos permite criar rotas entre as nossas DOM
+yarn add react-router-dom
