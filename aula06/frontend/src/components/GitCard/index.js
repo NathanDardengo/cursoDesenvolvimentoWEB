@@ -22,8 +22,8 @@ export default class GitCard extends Component{
         return(
             <div className='main-container'>
                 {
-                    //
                     this.state.dados.map(d =>(
+                        <a href={`/detail/${d._id}`} key={d._id}>
                         <div className='card' key={d._id}>
                             <img id='avatar' src={d.avatar_url} alt=''/>      
                                 <div id='info'>
@@ -32,6 +32,7 @@ export default class GitCard extends Component{
                                     <p>{d.bio}</p>
                                 </div>
                         </div>
+                    </a>
                     ))
                 }
             </div>  

@@ -39,3 +39,7 @@
     color: #6b6565;
     font-family: sans-serif;
 }
+
+.main-container a{
+    text-decoration: none;
+}
